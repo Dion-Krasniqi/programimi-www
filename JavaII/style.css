@@ -1,0 +1,29 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+}
+
+#permbajtja {
+  margin-top:10em;
+  width: 100vw;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+}
+
+#permbajtja > div {
+  flex: 1;
+  min-width: 0;          /* lets the flex items shrink with the window */
+  text-align: center;
+}
+
+#permbajtja img {
+  width: 100%;           /* image follows the width of its div */
+  max-width: 100%;
+  height: auto;          /* keeps the aspect ratio */
+  display: block;
+}
