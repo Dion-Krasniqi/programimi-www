@@ -1,0 +1,79 @@
+/*
+Qasja korrekte ne emrin e id behet permes #, kurse . kur perdorim class="poster";
+Po ashtu ngjyra e tekstit dhe prapavijes eshte e njejte qe e ben te pamundur leximin e tekstit;
+#poster {
+  color: white;
+  background: white;
+  width: 700px;
+  padding: 80px;
+}
+.poster {
+  color: #17263c;
+  width: 100%;
+}
+*/
+:root {
+  --secondary-color: #10b981;
+  --bg-color: #f8fafc;
+  --text-dark: #1e293b;
+}
+* {
+  box-sizing: border-box;
+}
+body {
+  font-family: system-ui, sans-serif;
+  margin: 1rem;
+}
+#poster {
+  color: var(--text-dark);
+  background: var(--bg-color);
+  border: 1px solid var(--secondary-color);
+  border-radius: 1%;
+  width: 360px;
+  padding: 80px;
+  width: 100%;
+}
+#tiketa {
+  justify-content: left;
+  align-items: center;
+  display: flex;
+  flex-direction: row;
+}
+button {
+  color: white;
+  background-color: var(--secondary-color);
+  border-width: 0;
+  border-radius: 15%;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+button:hover {
+  background-color: var(--text-dark);
+  text-decoration: underline;
+}
+button:focus-visible {
+  /* Provide a prominent, accessible ring specifically for keyboard users */
+  outline: 3px solid #0066cc;
+}
+
+#event-info {
+  margin-top:0em;
+  font-weight: bold;
+  font-size: small;
+}
+#generic {
+  margin: 9px;
+  border: 2px solid var(--text-dark);
+  padding-top: 5px;
+  padding: 5px;
+  padding-bottom: 5px;
+  border-radius: 30%;
+}
+#special{
+  margin: 9px;
+  border: 2px dashed var(--text-dark);
+  padding-top: 5px;
+  padding: 5px;
+  padding-bottom: 5px;
+  border-radius: 30%;
+}
