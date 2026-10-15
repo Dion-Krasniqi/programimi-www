@@ -1,0 +1,21 @@
+body { 
+    font-family: system-ui, sans-serif; 
+    margin: 1rem; 
+    box-sizing: border-box; 
+    width: 360px;
+}
+.offers { 
+    width: 100%; 
+    padding: 2rem; 
+    border: 2px solid navy; 
+    box-sizing: border-box; 
+
+}
+a:focus { 
+    outline: 3px solid #0066cc;
+}
+.offers > p {
+    width: 100%; 
+    box-sizing: border-box; 
+    overflow-wrap: break-word;
+}
