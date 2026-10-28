@@ -1,0 +1,82 @@
+<!doctype html>
+<html lang="sq">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Formulari i misionit sekret</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header>
+      <h1>Formulari i misionit sekret</h1>
+    </header>
+    <main id="main">
+      <br>
+      <p>Metoda GET nuk ruan te dhena ne server</p>
+      <form id="mission-form" action="pranuar.html" method="get">
+      <div class="field">
+        <label for="pseudonim">Pseudonimi (3–20 karaktere)</label>
+        <input type="text" id="pseudonim" name="pseudonim" minlength="3" maxlength="20" required>
+      </div>
+
+      <div class="field">
+        <label for="email">Email i sajuar</label>
+        <input type="email" id="email" name="email" placeholder="student@example.org" required>
+      </div>
+
+      <div class="field">
+        <label for="persona">Persona (1–5)</label>
+        <input type="number" id="persona" name="persona" min="1" max="5" required>
+      </div>
+
+      <fieldset>
+        <legend>Kategoria</legend>
+        <div>
+          <input type="radio" id="art" name="category" value="art" required>
+          <label for="art">Art</label>
+        </div>
+        <div>
+          <input type="radio" id="science" name="category" value="shkence">
+          <label for="science">Shkence</label>
+        </div>
+      </fieldset>
+
+      <div class="field" id="check">
+        <input type="checkbox" id="rules" name="rules" required>
+        <label for="rules">I pranoj rregullat e demonstrimit</label>
+      </div>
+
+      <button type="submit">Kontrollo formularin</button>
+    </form>
+
+    <table>
+      <caption>Oraret e misioneve</caption>
+      <thead>
+        <tr>
+          <th scope="col">Ora</th>
+          <th scope="col">Misioni</th>
+          <th scope="col">Vendi</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <th scope="row">10:00</th>
+          <td>Gjej shenjën</td>
+          <td>Oborri</td>
+        </tr>
+        <tr>
+          <th scope="row">12:00</th>
+          <td>Lexo hartën</td>
+          <td>Biblioteka</td>
+        </tr>
+        <tr>
+          <th scope="row">14:00</th>
+          <td>Zbulo objektin</td>
+          <td>Laboratori</td>
+        </tr>
+      </tbody>
+    </table>
+    </main>
+    <footer>Shembull mësimor · Të dhëna të sajuara · Vetëm front end</footer>
+  </body>
+</html>

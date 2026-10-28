@@ -1,0 +1,46 @@
+/* Shkruaj stilin tënd. */
+* {
+  box-sizing: border-box;
+}
+body {
+  font-family: system-ui, sans-serif;
+  margin: 1rem;
+  display: grid;
+  justify-items: center;
+}
+header,
+main {
+  width: 80%;
+}
+.mission-form {
+  display: grid;
+  gap: 1rem;
+  justify-items: start;
+}
+.field {
+  display: grid;
+  gap: 0.25rem;
+}
+#check {
+  display: flex;
+  margin: 5px;
+}
+fieldset {
+  display: grid;
+  gap: 0.75rem;
+  width: 100%;
+  box-sizing: border-box;
+}
+table {
+  width: 100%;
+  margin-top: 1rem;
+  border-collapse: collapse;
+}
+table,
+th,
+td {
+  border: 1px solid #a0aec0;
+}
+caption {
+  text-align: center;
+}
